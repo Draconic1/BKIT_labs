@@ -26,7 +26,7 @@ async def tour_remove_command(message: types.Message):
 
 
 async def tour_menu_command(message: types.Message):
-    await sqlite_db.sql_read(message)
+    await sqlite_db.sql_read(message, bot)
 
 
 
